@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.instruction-number {
+  @apply flex w-9 h-9 bg-yellow-300 justify-center rounded-md text-white text-2xl font-playfairDisplay;
+}

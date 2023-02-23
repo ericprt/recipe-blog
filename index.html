@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Blog</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section class="container px-4 mt-4 md:mt-16 mb-10 lg:px-24 md:px-16">
+      <div>
+        <h1 class="font-bold font-playfairDisplay text-2xl md:text-5xl">Classic Cheesecake Recipe</h1>
+        <div class="flex gap-2 text-[#4f4f4f] mt-4 md:w-[70%]">
+          <div><span class="material-symbols-outlined rotate-90"> drag_indicator </span></div>
+          <p class="italic text-xs md:text-sm font-medium font-montserrat">
+            Look no further for a creamy and ultra smooth classic cheesecake recipe! Paired with a buttery graham cracker crust, no one can deny its simple decadence. For the best results, bake in a water bath.
+          </p>
+        </div>
+      </div>
+      <div class="mt-4">
+        <img src="src/img/photo1.png" alt="" />
+      </div>
+    </section>
+
+    <!-- Main Section -->
+    <main class="container mb-32 px-4 lg:px-24 md:px-16 lg:flex flex-row-reverse justify-between">
+      <!-- Serving Times -->
+      <section class="mb-6 font-montserrat lg:w-52 lg:h-72 lg:rounded-xl lg:shadow-xl lg:flex flex-col justify-center items-center">
+        <div class="flex gap-1 lg:gap-3">
+          <div class="flex items-center justify-center group text-[#F2994A] lg:scale-150"><span class="material-symbols-outlined"> restaurant_menu </span></div>
+          <div class="text-[10px]">
+            <h3 class="uppercase text-[#bdbdbd]">yields</h3>
+            <h3 class="text-[#F2994A] lg:text-base">12 servings</h3>
+          </div>
+        </div>
+        <div class="flex gap-7 mt-4 lg:flex-col">
+          <div class="flex gap-1 lg:gap-3">
+            <div class="flex items-center justify-center"><span class="material-symbols-outlined text-[#4f4f4f] lg:scale-150"> schedule </span></div>
+            <div class="text-[10px]">
+              <h3 class="uppercase text-[#bdbdbd]">prep time</h3>
+              <h3 class="lg:text-base">45 minutes</h3>
+            </div>
+          </div>
+          <div class="flex gap-1 lg:gap-3">
+            <div class="flex items-center justify-center"><span class="material-symbols-outlined text-[#4f4f4f] lg:scale-150"> schedule </span></div>
+            <div class="text-[10px]">
+              <h3 class="uppercase text-[#bdbdbd]">cook time</h3>
+              <h3 class="lg:text-base">1 hour</h3>
+            </div>
+          </div>
+          <div class="flex gap-1 lg:gap-3">
+            <div class="flex items-center justify-center"><span class="material-symbols-outlined text-[#4f4f4f] lg:scale-150"> schedule </span></div>
+            <div class="text-[10px]">
+              <h3 class="uppercase text-[#bdbdbd]">total time</h3>
+              <h3 class="lg:text-base">7,75 hours</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="grow-[2] lg:max-w-[60%]">
+        <!-- Ingredients Section Start -->
+        <div class="container">
+          <h2 class="font-bold font-playfairDisplay text-lg">Ingredients</h2>
+
+          <!-- raham Cracker Crust Ingredients -->
+          <div class="pb-6 mt-2">
+            <h3 class="italic font-playfairDisplay mb-1">Graham Cracker Crust</h3>
+            <div class="flex gap-2 relative">
+              <input type="checkbox" name="ingredients-1" id="ingredients-1" class="absolute top-[4px]" />
+              <label for="ingredients-1" class="leading-5 ml-6 font-montserrat text-sm">1 and 1/2 cups (150g) <span class="font-bold text-[#333]">graham cracker crumbs</span> (about 10 full sheet graham crackers)</label>
+            </div>
+            <div class="flex gap-2 mt-2 relative">
+              <input type="checkbox" name="ingredients-2" id="ingredients-2" class="absolute top-[4px]" />
+              <label for="ingredients-2" class="leading-5 ml-6 font-montserrat text-sm">5 Tablespoons (70g) <span class="font-bold text-[#333]">unsalted butter</span>, melted</label>
+            </div>
+            <div class="flex gap-2 mt-2 relative">
+              <input type="checkbox" name="ingredients-3" id="ingredients-3" class="absolute top-[4px]" />
+              <label for="ingredients-3" class="leading-5 ml-6 font-montserrat text-sm">1/4 cup (50g) <span class="font-bold text-[#333]">granulated sugar</span></label>
+            </div>
+          </div>
+
+          <!-- Cheesecake Ingredients -->
+          <div>
+            <h3 class="italic font-playfairDisplay mb-1">Cheesecake</h3>
+            <div class="flex gap-2 relative">
+              <input type="checkbox" name="ingredients-3" id="ingredients-3" class="absolute top-[4px]" />
+              <label for="ingredients-3" class="leading-5 ml-6 font-montserrat text-sm">four 8-ounce blocks (904g) full-fat <span class="font-bold text-[#333]">cream cheese</span>, softened to room temperature</label>
+            </div>
+            <div class="flex gap-2 mt-2 relative">
+              <input type="checkbox" name="ingredients-3" id="ingredients-3" class="absolute top-[4px]" />
+              <label for="ingredients-3" class="leading-5 ml-6 font-montserrat text-sm">1 cup (200g) <span class="font-bold text-[#333]">granulated sugar</span></label>
+            </div>
+            <div class="flex gap-2 mt-2 relative">
+              <input type="checkbox" name="ingredients-3" id="ingredients-3" class="absolute top-[4px]" />
+              <label for="ingredients-3" class="leading-5 ml-6 font-montserrat text-sm">1 cup (240g) full-fat <span class="font-bold text-[#333]">sour cream</span>, at room temperature</label>
+            </div>
+            <div class="flex gap-2 mt-2 relative">
+              <input type="checkbox" name="ingredients-3" id="ingredients-3" class="absolute top-[4px]" />
+              <label for="ingredients-3" class="leading-5 ml-6 font-montserrat text-sm">1 teaspoon <span class="font-bold text-[#333]">pure vanilla extract</span></label>
+            </div>
+            <div class="flex gap-2 mt-2 relative">
+              <input type="checkbox" name="ingredients-3" id="ingredients-3" class="absolute top-[4px]" />
+              <label for="ingredients-3" class="leading-5 ml-6 font-montserrat text-sm">2 teaspoons <span class="font-bold text-[#333]">fresh lemon juice</span> (optional, but recommended)</label>
+            </div>
+            <div class="flex gap-2 mt-2 relative">
+              <input type="checkbox" name="ingredients-3" id="ingredients-3" class="absolute top-[4px]" />
+              <label for="ingredients-3" class="leading-5 ml-6 font-montserrat text-sm">3 large <span class="font-bold text-[#333]">eggs</span>, at room temperature</label>
+            </div>
+            <div class="flex gap-2 mt-2 relative">
+              <input type="checkbox" name="ingredients-3" id="ingredients-3" class="absolute top-[4px]" />
+              <label for="ingredients-3" class="leading-5 ml-6 font-montserrat text-sm"
+                >topping suggestions: <span class="italic font-medium">salted caramel, lemon curd, strawberry topping, chocolate ganache, red wine chocolate ganache, fresh fruit, whipped cream, or raspberry sauce</span> (recipe in notes)
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- Ingredients Section End -->
+
+        <!-- Instruction Section Start -->
+        <div class="container">
+          <h2 class="font-bold text-2xl my-5 font-playfairDisplay">Instructions</h2>
+          <div class="flex gap-4 pb-7">
+            <div><span class="instruction-number">1</span></div>
+            <p class="leading-5 font-montserrat">Adjust the oven rack to the lower-middle position and preheat oven to 350°F (177°C).</p>
+          </div>
+          <div class="flex gap-4 pb-7">
+            <div><span class="instruction-number">2</span></div>
+            <p class="leading-5 font-montserrat">
+              <span class="font-bold text-[#333]">Make the crust:</span> Using a food processor, pulse the graham crackers into crumbs. Pour into a medium bowl and stir in sugar and melted butter until combined. (You can also pulse it all
+              together in the food processor.) Mixture will be sandy. Press firmly into the bottom and slightly up the sides of a 9-inch or 10-inch springform pan. No need to grease the pan first. I use the bottom of a measuring cup to pack
+              the crust down tightly. Pre-bake for 8 minutes. Remove from the oven and place the hot pan on a large piece of aluminum foil. The foil will wrap around the pan for the water bath in step 4. Allow crust to slightly cool as you
+              prepare the filling.
+            </p>
+          </div>
+          <div class="flex gap-4 pb-7">
+            <div><span class="instruction-number">3</span></div>
+            <p class="leading-5 font-montserrat">
+              <span class="font-bold text-[#333]">Make the filling:</span> Using a handheld or stand mixer fitted with a paddle attachment, beat the cream cheese and granulated sugar together on medium-high speed in a large bowl until the
+              mixture is smooth and creamy, about 2 minutes. Add the sour cream, vanilla extract, and lemon juice then beat until fully combined. On medium speed, add the eggs one at a time, beating after each addition until just blended.
+              After the final egg is incorporated into the batter, stop mixing. To help prevent the cheesecake from deflating and cracking as it cools, avoid over-mixing the batter as best you can.
+            </p>
+          </div>
+          <div class="flex gap-4 pb-7">
+            <div><span class="instruction-number">4</span></div>
+            <p class="leading-5 font-montserrat">
+              <span class="font-bold text-[#333]">Prepare the simple water bath (see note)</span> Boil a pot of water. You need 1 inch of water in your roasting pan for the water bath, so make sure you boil enough. I use an entire kettle of
+              hot water. As the water is heating up, wrap the aluminum foil around the springform pan. Pour the cheesecake batter on top of the crust. Use a rubber spatula or spoon to smooth it into an even layer. Place the pan inside of a
+              large roasting pan. Carefully pour the hot water inside of the pan and place in the oven. (Or you can place the roasting pan in the oven first, then pour the hot water in. Whichever is easier for you.)
+            </p>
+          </div>
+          <div class="flex gap-4 pb-7">
+            <div><span class="instruction-number">5</span></div>
+            <p class="leading-5 font-montserrat">
+              Bake cheesecake for 55-70 minutes or until the center is almost set. When it’s done, the center of the cheesecake will slightly wobble if you gently shake the pan. Turn the oven off and open the oven door slightly. Let the
+              cheesecake sit in the oven in the water bath as it cools down for 1 hour. Remove from the oven and water bath, then cool cheesecake completely at room temperature. Then refrigerate the cheesecake for at least 4 hours or
+              overnight.
+            </p>
+          </div>
+          <div class="flex gap-4 pb-7">
+            <div><span class="instruction-number">6</span></div>
+            <p class="leading-5 font-montserrat">
+              Use a knife to loosen the chilled cheesecake from the rim of the springform pan, then remove the rim. Using a clean sharp knife, cut into slices for serving. For neat slices, wipe the knife clean and dip into warm water
+              between each slice.
+            </p>
+          </div>
+          <div class="flex gap-4 pb-7">
+            <div><span class="instruction-number">7</span></div>
+            <p class="leading-5 font-montserrat">Serve cheesecake with desired toppings. Cover and store leftover cheesecake in the refrigerator for up to 5 days.</p>
+          </div>
+        </div>
+        <!-- Instruction Section End -->
+
+        <!-- Source -->
+        <div class="container px-4">
+          <a href="https://sallysbakingaddiction.com/classic-cheesecake/" class="text-[#bdbdbd] text-xs font-montserrat italic"
+            >Source: <br />
+            https://sallysbakingaddiction.com/classic-cheesecake/
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="container py-4">
+      <h4 class="text-center text-[#828282] font-montserrat text-sm">created by <a href="https://github.com/ericprt/" class="font-bold">ericprt</a> - devChallenges.io</h4>
+    </footer>
+  </body>
+</html>
